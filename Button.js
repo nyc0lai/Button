@@ -13,7 +13,7 @@ class Button {
     render() {
         //insert Button
         this.root.innerHTML = `<button>${this.propText}</button>`;
-        //Add a event for the Button...
+        //Adding event for the Button...
         this.root.firstElementChild
             .addEventListener('click', this.onClick.bind(this));
     }
