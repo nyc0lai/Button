@@ -4,8 +4,9 @@ class Button {
         this.count = count;
     }
  
-    mount(rootDiv){
+    mount(rootDiv, onClickCB){
         this.root = rootDiv;
+        this.onClickCB = onClickCB
         this.render();
       }
 
@@ -18,11 +19,6 @@ class Button {
     }
 
     onClick() { 
-        this.counting()
+        this.onClickCB()
         }
-//the function that calculates count of clicked on button
-    counting() {
-        this.count ++
-        console.log(this.count)
-    }
 }
