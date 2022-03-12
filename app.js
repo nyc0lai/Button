@@ -1,9 +1,8 @@
 
 
-new Button("CLICK COUNT")
-    .mount(document.querySelector("#button"), function () {
-            console.clear()
+new Button()
+    .mount(document.querySelector("#button-div"), function () {
             this.count++
-            console.log(this.count)
+            this.render()
         }
     )

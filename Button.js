@@ -12,7 +12,7 @@ class Button {
 
     render() {
         //insert Button
-        this.root.innerHTML = `<button>${this.propText}</button>`;
+        this.root.innerHTML = `<button>${this.count}</button>`;
         //Adding event for the Button...
         this.root.firstElementChild
             .addEventListener('click', this.onClick.bind(this));

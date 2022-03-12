@@ -1,0 +1,8 @@
+button {
+    border: 1px solid #1f1f1f;
+    background-color: #efefef;
+    font: 40px Orbitron;
+    color: red;
+    width: 120px;
+    height: 75px;
+}
